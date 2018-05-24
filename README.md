@@ -5,7 +5,7 @@
   
 运行一段时间后，根目录下执行：tensorboard --logdir="./log/"，就可以通过网页查看模型运行效果了。  
   
-虚拟环境：virtualenv env  
+虚拟环境：virtualenv -p python2 env  
 source env/bin/activate  
   
 linux上安装TensorFlow：  
