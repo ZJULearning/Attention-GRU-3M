@@ -1,15 +1,16 @@
 # Attention-GRU-3M
+Code for the paper 'A Brand-level Ranking System with the Adapted Attention-GRU Model[C]'. (IJCAI 2018 Accepted)
+
+Run command：python train.py --buckets "./data/" --checkpointDir ./log/ --exp debug --m1 1 --m2 0 --m3 1  
+parameters：'buckets' is the folder for the input data，'checkpointDir' is the fold for the output data，'debug' is only a folder name（not important），'m1 m2 m3' indicate which Modification is activated.  
   
-执行语句是：python train.py --buckets "./data/" --checkpointDir ./log/ --exp debug --m1 1 --m2 0 --m3 1  
-参数：buckets是输入数据文件目录，checkpointDir是输出数据文件目录，debug只是一个命名（不重要），m1 m2 m3指定激活哪些Modification。  
+After running the above command for a while，run under the root direcotory：tensorboard --logdir="./log/"，then you can see the performance with a website link.  
   
-运行一段时间后，根目录下执行：tensorboard --logdir="./log/"，就可以通过网页查看模型运行效果了。  
-  
-虚拟环境：virtualenv -p python2 env  
+virtual environment：virtualenv -p python2 env  
 source env/bin/activate  
   
-linux上安装TensorFlow：  
+Install TensorFlow in Linux：  
 pip install --upgrade  https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.1-cp27-none-linux_x86_64.whl  
   
-mac上安装TensorFlow：  
+nstall TensorFlow in Linux mac：  
 pip install --upgrade  https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py2-none-any.whl  
