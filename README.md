@@ -12,5 +12,5 @@ source env/bin/activate
 Install TensorFlow in Linux：  
 pip install --upgrade  https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.1-cp27-none-linux_x86_64.whl  
   
-Install TensorFlow in Linux mac：  
+Install TensorFlow in Mac：  
 pip install --upgrade  https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py2-none-any.whl  
